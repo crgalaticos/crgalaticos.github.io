@@ -1,0 +1,19 @@
+{
+  "name": "crgalaticos.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crgalaticos/crgalaticos.github.io.git"
+  },
+  "author": "Raphael Brasil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/crgalaticos/crgalaticos.github.io/issues"
+  },
+  "homepage": "https://github.com/crgalaticos/crgalaticos.github.io#readme"
+}
