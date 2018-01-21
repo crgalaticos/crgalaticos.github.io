@@ -1,0 +1,19 @@
+body {
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary {
+    display: block
+}
+
+a {
+    text-decoration: none;
+    color: #406eb3;
+    cursor: pointer;
+
+    &:hover {
+        color: #2c4b7b;
+    }
+}
