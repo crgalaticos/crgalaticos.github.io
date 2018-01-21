@@ -9,15 +9,18 @@
         width: 100%;
         background-size: 100%;
         background-repeat: no-repeat;
-        display: flex;
-        align-items: center;
-        justify-items: center;
         color: #fff;
 
         h1 {
-            flex: 1;
+            margin-top: 2em;
             text-align: center;
-            font-size: 40px;
+            font-size: 100px;
+            letter-spacing: 20px;
+            text-shadow: 5px 5px 15px #000;
+        }
+        h2 {
+            text-align: center;
+            text-shadow: 5px 5px 15px #000;
         }
     }
 }
