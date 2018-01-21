@@ -6,9 +6,11 @@
   "scripts": {
     "build-css": "node-sass-chokidar src/scss -o build/css",
     "watch-css": "yarn run build-css && node-sass-chokidar src/scss -o build/css --watch --recursive",
-    "babel": "babel --presets es2015 src/js/main.js -o build/js/main.bundle.js -w",
+    "build-js": "babel --presets es2015 src/js/main.js -o build/js/main.bundle.js",
+    "watch-js": "yarn build-js && babel --presets es2015 src/js/main.js -o build/js/main.bundle.js -w",
     "start-server": "http-server",
-    "start": "npm-run-all -p start-server babel watch-css"
+    "start": "npm-run-all -p start-server watch-js watch-css",
+    "build": "yarn build-js && yarn build-css"
   },
   "repository": {
     "type": "git",
