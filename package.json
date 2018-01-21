@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build-css": "node-sass-chokidar src/scss -o build/css",
-    "watch-css": "yarn run build-css && node-sass-chokidar src/scss -o build/css --watch --recursive",
+    "build-css": "node-sass-chokidar src/scss -o build/css --output-style=compressed",
+    "watch-css": "yarn run build-css && node-sass-chokidar src/scss -o build/css --output-style=compressed --watch --recursive",
     "build-js": "babel --presets es2015 src/js/main.js -o build/js/main.bundle.js",
     "watch-js": "yarn build-js && babel --presets es2015 src/js/main.js -o build/js/main.bundle.js -w",
     "start-server": "http-server",
